@@ -1,10 +1,37 @@
-.icon {
-  width: 60px
-  height: 60px;
-  fill: black;
+.div {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: 600px;
+  height: 300px;
+  background-color: grey;
+}
+.div2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 600px;
+  height: 300px;
+  background-color: rgba(106, 142, 35, 0.274);
 }
 
-.clock {
-  --clock-color: blue;
-  --clock-accent-color: green;
+.div::after {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  z-index: 3;
+}
+
+.text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  color: rgb(172, 255, 47);
 }
