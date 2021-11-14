@@ -1,22 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <main>
-      <div class="div">
-        <div class="div2">
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam,
-            obcaecati?
-          </p>
+    <<link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a class="logo" href="">
+                <span class="slogan">Web</span><span class="second-slogan">Studio</span>
+            </a>
+            <nav class="header-nav">
+                <ul class="site-nav">
+                    <li class="item"><a class="link" href="/">Cтудия</a></li>
+                    <li class="item"><a class="link" href="/portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link" href="/">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav">
+                <li class="item"><a class="second-link" href="malito:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="second-link" href="tel:+380961111111">+380961111111</a></li>
+            </ul>
         </div>
-      </div>
+
+    </header>
+    <main>
+        <!-- Заказать услугу -->
+
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                <button class="hero-buttons" type="button">Заказать услугу</button>
+        </section>
+        <!-- Наша особенность -->
+        <section class="container">
+            <ul class="subtitle">
+                <li class="item">
+                    <h3 class="subtitle-item">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                    <p class="text-item">Идейные соображения, а также начало повседневной работы по формированию
+                        позиции.
+                    </p>
+                </li class="item">
+                <li class="item">
+                    <h3 class="subtitle-item">ПУНКТУАЛЬНОСТЬ</h3>
+                    <p class="text-item">
+                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                    </p>
+                </li class="item">
+                <li class="item">
+                    <h3 class="subtitle-item">ПЛАНИРОВАНИЕ</h3>
+                    <p class="text-item">
+                        Равным образом консультация с широким активом в значительной степени обуславливает.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="subtitle-item">СОВРЕМЕННІЕ ТЕХНОЛОГИИ</h3>
+                    <p class="text-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    </p>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <!-- Чем мы занимаемся -->
+        <section>
+            <div class="container">
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="title-item">
+                    <li class="title-img">
+                        <img src="/img/planning.jpg" alt="Планирование" width="370" />
+                    </li>
+                    <li class="title-img">
+                        <img src="/img/Punctuality.jpg" alt="Пунктуальность" width="370" />
+                    </li>
+                    <li class="title-img">
+                        <img src="/img/technologies.jpg" alt="Современные технологии" width="370" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Наша команда -->
+        <section>
+            <div class="container">
+                <h2 class="title">Наша команда</h2>
+                <ul class="pre-title">
+                    <li class="pre-title-img">
+                        <img src="/img/Product_Designer.jpg" alt="Product Designer" width="270" />
+                        <h3 class="second-title">Игорь Демьяненко</h3>
+                        <p class="text">Product Designer</p>
+
+                    </li>
+                    <li class="pre-title-img">
+                        <img src="/img/Frontend_Developer.jpg" alt="Frontend Developer" width="270" />
+                        <h3 class="second-title">Ольга Репина</h3>
+                        <p class="text">Frontend Developer</p>
+
+                    </li>
+                    <li class="pre-title-img">
+                        <img src="/img/Marketing.jpg" alt="Marketing" width="270" />
+                        <h3 class="second-title">Николай Тарасов</h3>
+                        <p class="text">Marketing</p>
+
+                    </li>
+                    <li class="pre-title-img">
+                        <img src="/img/UI_Designer.jpg" alt="Designer" width="270" />
+                        <h3 class="second-title">Михаил Ермаков</h3>
+                        <p class="text">UI Designer</p>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-  </body>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <address class="footer-main">
+                <div class="footer-link">
+                    <a class="footer-link-one" href="">
+                        <span class="slogan">Web</span><span class="slogan-footer">Studio</span>
+                    </a>
+                </div>
+                <ul class="footer-adrees">
+                    <li class="footer-item">
+                        <a class="address" href="/">г.Киев,пр-т Леси Украинки,26</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="second-address" href="malito:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="second-address" href="tel:+380991111111">+380991111111
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</body>
+
 </html>

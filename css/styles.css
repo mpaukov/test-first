@@ -1,37 +1,327 @@
-.div {
-  position: relative;
-  top: 100px;
-  left: 100px;
-  width: 600px;
-  height: 300px;
-  background-color: grey;
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: #2196f3;
+  --fourth-text-color: #ffffff;
+  --five-text-color: #000000;
+  --six-text-color: rgba(255, 255, 255, 0.6);
+  --background-text-color: #2f303a;
 }
-.div2 {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 600px;
-  height: 300px;
-  background-color: rgba(106, 142, 35, 0.274);
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
-
-.div::after {
-  position: absolute;
-  top: 50px;
-  left: 70px;
-  content: '';
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: tomato;
-  z-index: 3;
+a {
+  text-decoration: none;
 }
-
-.text {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+ul {
   margin: 0;
   padding: 0;
-  color: rgb(172, 255, 47);
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Roboto', 'Raleway';
+  color: var(--main-text-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/*-------------------------HEADER -------------------*/
+
+.header {
+  color: var(--fourth-text-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.slogan {
+  color: var(--third-text-color);
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.second-slogan {
+  color: var(--five-text-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/* Nav */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus {
+  color: var(--third-text-color);
+}
+/* связь с нами */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.logo {
+  margin-right: 93px;
+}
+.second-link {
+  color: var(--second-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.second-link:hover,
+.second-link:focus {
+  color: var(--third-text-color);
+}
+/* Заказать услугу*/
+.hero {
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--background-text-color);
+  text-align: center;
+}
+.hero-title {
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--fourth-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+.hero-buttons {
+  display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+
+  background-color: var(--third-text-color);
+  color: var(--fourth-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+.hero-buttons:focus {
+  color: var(--fourth-text-color);
+}
+/* Наша особенность */
+.subtitle {
+  display: flex;
+}
+
+.subtitle-item {
+  margin-top: 94px;
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.item .subtitle-item:not(:last-child) {
+  margin-right: 30px;
+}
+.text-item {
+  margin-top: 10px;
+  color: var(--second-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.item .text-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+/* Чем мы занимаемся */
+
+.title {
+  margin-top: 94px;
+  text-align: center;
+}
+.title-item {
+  display: flex;
+  margin-top: 50px;
+}
+.title-item .title-img:not(:last-child) {
+  margin-right: 30px;
+  padding-bottom: 94px;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/* Наша команда */
+.pre-title {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.pre-title-img {
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.pre-title .pre-title-img:last-child {
+  margin-right: 0px;
+}
+.second-title {
+  margin-top: 30px;
+  text-align: center;
+
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.text {
+  margin-top: 10px;
+  text-align: center;
+
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/* Footer */
+.footer {
+  display: block;
+  background-color: var(--background-text-color);
+  font-style: normal;
+  height: 252px;
+}
+.footer-link {
+  display: block;
+  margin-bottom: 60px;
+}
+.footer-link-one {
+  display: block;
+  margin-bottom: 60px;
+}
+.footer-item {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-adress .footer-item:last-child {
+  margin-bottom: 60px;
+}
+.address {
+  color: var(--fourth-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+.address:hover,
+.address:focus {
+  color: var(--third-text-color);
+}
+.second-address {
+  color: var(--six-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+.second-address:hover,
+.second-address:focus {
+  color: var(--third-text-color);
+}
+.slogan-footer {
+  color: var(--fourth-text-color);
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/* Портфолио */
+.caption {
+  display: none;
+}
+.second-buttons {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.second-buttons:hover,
+.second-buttons:focus {
+  background-color: var(--third-text-color);
+  color: var(--fourth-text-color);
+}
+
+/* Примеры */
+.list-item {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.second-list-item {
+  color: var(--second-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
