@@ -325,3 +325,8 @@ body {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
