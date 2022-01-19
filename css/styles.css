@@ -330,3 +330,16 @@ body {
   width: 600px;
   height: 300px;
 }
+
+.customer__reviews {
+  --swiper-theme-color: red;
+  --swiper-navigation-size: 200px;
+  --swiper-pagination-bullet-size: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url('../images/logo512.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
